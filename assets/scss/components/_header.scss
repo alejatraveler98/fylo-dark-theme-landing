@@ -1,6 +1,7 @@
 .main-header{
     background-color: var(--color-main);
     padding-top:1rem;
+    padding-bottom: 2rem;
     &__logo{
         width:100px;
     }
@@ -22,5 +23,18 @@
         @include media(medium){
             padding: 1rem;
         }
+    }
+}
+
+
+.banner{
+    
+    &-img{
+        margin-top: 1rem;
+        width:100%;
+    }
+    &-paragraph{
+        line-height: 1.6;
+        font-weight: 400;
     }
 }
