@@ -1,0 +1,26 @@
+.main-header{
+    background-color: var(--color-main);
+    padding-top:1rem;
+    &__logo{
+        width:100px;
+    }
+}
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:2rem;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        padding-left : 1rem;
+        padding-right: 1rem;
+        @include media(medium){
+            padding: 1rem;
+        }
+    }
+}

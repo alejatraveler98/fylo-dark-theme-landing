@@ -1,0 +1,78 @@
+/*Para ocupar el mixin se requiere de un breakpoint, este breakpoint
+hsl(217,28%,15%);contiene las medidas que vamos a manejar para nuestras pantallas ya dependera
+de nosotros que medidas vamos a tomar porque */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }
+
+:root {
+  --color-main:hsl(217,28%,13%);
+  --color-intro:hsl(217,28%,15%);
+  --color-footer:hsl(217,53%,9%);
+  --color-testimonial:hsl(219,30%,18%);
+  --color-cyan: hsl(176,68%,64%);
+  --color-blue: hsl(198,60%,50%);
+  --color-white: hsl(0,0%,100%); }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  color: var(--color-white); }
+
+a {
+  text-decoration: none;
+  color: var(--color-white); }
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0; }
+
+h1 {
+  font-size: var(--h1-font-size); }
+
+h2 {
+  font-size: var(--h2-font-size); }
+
+.l-container {
+  max-width: 1200px;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem; }
+  @media screen and (min-width: 640px) {
+    .l-container {
+      margin-left: auto;
+      margin-right: auto; } }
+
+.main-header {
+  background-color: var(--color-main);
+  padding-top: 1rem; }
+  .main-header__logo {
+    width: 100px; }
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem; }
+  .main-menu__list {
+    display: flex;
+    justify-content: space-between; }
+  .main-menu__item {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    @media screen and (min-width: 640px) {
+      .main-menu__item {
+        padding: 1rem; } }
