@@ -11,19 +11,19 @@ de nosotros que medidas vamos a tomar porque */
   --z-modal: 1000; }
 
 :root {
-  --color-main:hsl(217,28%,13%);
-  --color-intro:hsl(217,28%,15%);
-  --color-footer:hsl(217,53%,9%);
-  --color-testimonial:hsl(219,30%,18%);
+  --color-main: hsl(217,28%,13%);
+  --color-intro: hsl(217,28%,15%);
+  --color-footer: hsl(217,53%,9%);
+  --color-testimonial: hsl(219,30%,18%);
   --color-cyan: hsl(176,68%,64%);
   --color-blue: hsl(198,60%,50%);
   --color-white: hsl(0,0%,100%); }
 
 :root {
-  --h1-font-size:1.5rem;
+  --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --small-font-size:.95rem; }
+  --small-font-size: .95rem; }
 
 *, *::before, *::after {
   box-sizing: border-box; }
@@ -32,7 +32,8 @@ body {
   margin: 0;
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
-  color: var(--color-white); }
+  color: var(--color-white);
+  background-color: var(--color-main); }
 
 a {
   display: block;
@@ -69,10 +70,18 @@ h2 {
 .center {
   text-align: center; }
 
+.p-auto {
+  padding: 0 auto; }
+
 .main-header {
-  background-color: var(--color-main);
+  background-color: var(--color-intro);
   padding-top: 1rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 30px;
+  margin-bottom: 2rem;
+  background-image: url(/assets/img/bg-curvy-mobile.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 50%; }
   .main-header__logo {
     width: 100px; }
 
@@ -93,7 +102,7 @@ h2 {
 
 .banner-img {
   margin-top: 1rem;
-  width: 100%; }
+  width: 60%; }
 
 .banner-paragraph {
   line-height: 1.6;
@@ -106,3 +115,10 @@ h2 {
   margin: 0 4rem;
   background-color: var(--color-blue);
   border-radius: 50px; }
+
+.cards-items {
+  margin-bottom: 3rem;
+  padding: 0 3rem; }
+
+.productive-img {
+  width: 100%; }

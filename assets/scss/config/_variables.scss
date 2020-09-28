@@ -1,31 +1,31 @@
-$max-width:1250px;
-$header-height:3rem;
+$max-width    : 1250px;
+$header-height: 3rem;
 
 /*Para ocupar el mixin se requiere de un breakpoint, este breakpoint
 hsl(217,28%,15%);contiene las medidas que vamos a manejar para nuestras pantallas ya dependera
 de nosotros que medidas vamos a tomar porque */
 $breakpoints : (
-        small: 375px,    
-        medium :640px,
-        large: 960px,
-        xlarge:1440px
+        small : 375px,
+        medium: 640px,
+        large : 960px,
+        xlarge: 1440px
 );
 
 // Variables de apilamiento (z-index)
 :root {
-    --z-back    : -10;
-    --z-normal  : 1;
-    --z-tooltip : 10;
-    --z-fixed   : 100;
-    --z-modal   : 1000;
+    --z-back   : -10;
+    --z-normal : 1;
+    --z-tooltip: 10;
+    --z-fixed  : 100;
+    --z-modal  : 1000;
   }
 
 //Paleta de colores
 :root{
-    --color-main:hsl(217,28%,13%); 
-    --color-intro:hsl(217,28%,15%); 
-    --color-footer:hsl(217,53%,9%); 
-    --color-testimonial:hsl(219,30%,18%);
+    --color-main       : hsl(217,28%,13%);
+    --color-intro      : hsl(217,28%,15%);
+    --color-footer     : hsl(217,53%,9%);
+    --color-testimonial: hsl(219,30%,18%);
 
     --color-cyan: hsl(176,68%,64%);
     --color-blue: hsl(198,60%,50%);
@@ -35,10 +35,10 @@ $breakpoints : (
 
 //Variables de tipografia 
 :root{
-    --h1-font-size :1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --small-font-size:.95rem;
+    --h1-font-size   : 1.5rem;
+    --h2-font-size   : 1.25rem;
+    --h3-font-size   : 1rem;
+    --small-font-size: .95rem;
 }
 //Fuentes para los diferentes tamaños
 // @include media(medium) {
