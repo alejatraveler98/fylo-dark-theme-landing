@@ -1,0 +1,48 @@
+.footer{
+    background-color: var(--color-footer);
+    &-access{
+        padding:2.5rem;
+        border: 1px solid red;   
+        background-color: var(--color-intro);
+        position: relative;
+        bottom: 8rem;
+        // top: -8rem;
+    }
+    &-information{
+        margin-top:-4rem;
+        margin-bottom: 2rem;
+        &__items{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+    }
+    &-icons{
+        height: 1rem;
+        margin-right:1rem;
+    }
+
+    &-menu__item{
+        padding: 1rem 0 1rem;
+    }
+}
+
+.section-icons{
+    display: flex;
+    justify-content: center;
+    
+}
+.icons-networks{
+    padding:0 2rem;
+}
+.input{
+    display: block;
+    margin: 0 auto;
+    padding: .7rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.coded{
+    margin-bottom:0;
+}
