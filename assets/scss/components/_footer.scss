@@ -1,48 +1,89 @@
 .footer{
     background-color: var(--color-footer);
     &-access{
-        padding:2.5rem;
-        border: 1px solid red;   
+        padding         : 2.5rem;
+        border          : 10px solid var(--color-intro);
+        border-radius   : 10px;
         background-color: var(--color-intro);
-        position: relative;
-        bottom: 8rem;
-        // top: -8rem;
+        position        : relative;
+        bottom          : 8rem;
+
+        @include media(large){
+            width: 60%;
+        }
+        
+    }
+
+    &-l1{
+        @include media(large){
+            text-align: center;
+        }
+    }
+
+    &-items{
+       
+        &__nav{
+            @include media(large){
+                display        : flex;
+                justify-content: space-around;
+                text-align     : center;
+            }
+        }
+    }
+
+    &-form{
+        @include media(medium){
+            display    : flex;
+            align-items: center;
+        }
     }
     &-information{
-        margin-top:-4rem;
+        margin-top   : -4rem;
         margin-bottom: 2rem;
+
         &__items{
-            display: flex;
+            display        : flex;
             justify-content: space-between;
-            margin-bottom: 1rem;
+            margin-bottom  : 1rem;
         }
     }
     &-icons{
-        height: 1rem;
-        margin-right:1rem;
+        height      : 1rem;
+        margin-right: 1rem;
     }
 
     &-menu__item{
         padding: 1rem 0 1rem;
+        @include media(large){
+            padding-top: 0;
+        }
     }
 }
 
 .section-icons{
-    display: flex;
+    display        : flex;
     justify-content: center;
     
 }
 .icons-networks{
-    padding:0 2rem;
+    padding: 0 2rem;
+    height : 1rem;
 }
 .input{
-    display: block;
-    margin: 0 auto;
-    padding: .7rem 1.5rem;
+    display      : block;
+    margin       : 0 auto;
+    padding      : .7rem 1.5rem;
     border-radius: 50px;
     margin-bottom: 1rem;
+    width        : 100%;
+    @include media(medium){
+        margin-bottom: 0;
+        width        : 60%;
+        margin-right : 1rem;
+    }
 }
 
 .coded{
-    margin-bottom:0;
+    margin-bottom: 0;
 }
+

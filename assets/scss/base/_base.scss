@@ -19,7 +19,7 @@ a{
     text-decoration: none;
     color          : var(--color-white);
     @include media(medium){
-        display: inline;
+        display: inline-block;
     }
 }
 

@@ -1,14 +1,21 @@
 .button{
-    padding: 1rem;
+    padding: 1rem 3rem;
+    @include media(large){
+        padding: 1rem 6rem;
+    }
 }
 
 .button-blue{
     margin          : 0 4rem;
-    background-color: var(--color-blue);
+    background-image: linear-gradient(to right, var(--color-cyan), var(--color-blue));
     border-radius   : 50px;
 }
 
 .button-access{
-    width: 100%;
+    width : 100%;
     margin: 0;
+    @include media(medium){
+        width  : 40%;
+        padding: .9rem;
+    }
 }

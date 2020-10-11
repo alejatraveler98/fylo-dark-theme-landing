@@ -1,9 +1,27 @@
 .productive{
     margin-bottom: 2rem;
+    @include media(large){
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .productive-content{
+        
+        @include media(medium){
+            margin-left: 1rem;
+        }
+
+        &__title{
+            @include media(large){
+                text-align: start;
+            } 
+        }
+    }
 }
 
 .productive-img{
-    width:100%;
+    width        : 100%;
     margin-bottom: 2rem;
 }
 
@@ -12,8 +30,8 @@
 }
 
 .link-blue{
-    color:var(--color-cyan);
+    color          : var(--color-cyan);
     text-decoration: underline;
-    margin-right: 1rem;
+    margin-right   : 1rem;
 }
 

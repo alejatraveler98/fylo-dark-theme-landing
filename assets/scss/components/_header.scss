@@ -38,8 +38,19 @@
         margin-top: 1rem;
         width     : 60%;
     }
+
+    &-title{
+        font-size: var(--h1-font-size);
+    }
     &-paragraph{
         line-height: 1.6;
         font-weight: 400;
+    }   
+
+    &-content{
+        @include media(large){
+            max-width: 50%;
+            margin   : 0 auto;
+        }
     }
 }

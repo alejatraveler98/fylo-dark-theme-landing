@@ -1,4 +1,9 @@
 .cards-items{
     margin-bottom: 3rem;
     padding      : 0 3rem;
+    @include media(medium){
+        width: 100%;
+        flex : 0 50%;
+
+    }
 }
